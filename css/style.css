@@ -1,8 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -13,292 +13,287 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
 
-.home{
-    display: none;
+.home {
+  display: none;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-a:hover{
-    color: white;
+a:hover {
+  color: white;
 }
 
-body{
-    background-color: rgb(255, 255, 255);
+body {
+  background-color: rgb(255, 255, 255);
 }
 
-header{
-    background-color: rgb(245, 194, 84);
-    height: 5rem;
-    box-shadow: 1px 1px 5px gray;
+header {
+  background-color: #ffbb45;
+  box-shadow: 1px 1px 5px gray;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    height: 75%;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.headerDer {
+  display: flex;
+  gap: 1rem;
 }
 
-.headerDer{
-    display: flex;
-    gap: 1rem;
+.logo {
+  height: 3.5rem;
 }
 
-.icono{
-    height: 2rem;
+.buscador {
+  display: flex;
 }
 
-.buscador{
-    display: flex;
+.vaciarFiltros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+  background-color: rgb(253, 211, 131);
+  border-radius: 10px;
+  border: none;
 }
 
-.vaciarFiltros{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    width: 2rem;
-    padding: 0.5rem;
-    background-color: rgb(253, 211, 131);
-    border-radius: 10px;
-    border: none;
-}
-
-.btnFiltro{
-    background-color: white;
+.btnFiltro {
+  background-color: white;
 }
 
 main {
-    padding: 0.5rem;
-    display: flex;
-    gap: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
 }
 
-h2{
-    text-align: center;
-    margin: 1rem;
+h2 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+h4 {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+.imgCarrito {
+  height: 2rem;
+}
+
+.btnCarrito {
+  background-color: white;
+  border: none;
+}
+
+.btnCarrito:hover {
+  background-color: wheat;
+}
+
+.btnCarrito:active {
+  background-color: wheat;
+}
+
+.filtros {
+  width: 25%;
+  margin-left: 1rem;
+}
+
+.listaFiltro {
+  font-size: 0.7rem;
+}
+
+.btnFiltro,
+.inputFiltro {
+  padding: 0.3rem;
+  width: 4rem;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  accent-color: orange;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+}
+
+.cardBody {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 1fr 1fr;
+  align-items: center;
+}
+
+.carrito {
+  padding: 0;
+  margin: 0;
+}
+
+.detalleCarrito {
+  display: grid;
+  grid-template-columns: 0.3fr 2fr 0.5fr 0.3fr;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid black;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.carroVacio {
+  padding: 1rem;
+}
+
+.trashCart {
+  background-color: transparent;
+  border: none;
+}
+
+.total {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgb(217, 174, 121);
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.productos {
+  width: 70%;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+.inputSpinner {
+  background-color: orange;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  color: white;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.agregar {
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #f8f5ef;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(71, 71, 71);
+  font-size: 0.8rem;
+}
+
+.vaciar {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(248, 245, 239);
+  font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(71, 71, 71);
+  width: 20%;
+}
+
+footer {
+  background-color: #ffbb45;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .home {
+    display: block;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
     font-size: 1rem;
-}
+  }
 
-h4{
-    padding: 1rem;
-    font-size: 0.8rem;
-}
-
-h6{
-    font-size: 0.8rem;
-}
-
-.imgCarrito{
-    height: 2rem;
-}
-
-.btnCarrito{
-    background-color: white;
-    border: none;
-}
-
-.btnCarrito:hover{
-    background-color: wheat;
-}
-
-.btnCarrito:active{
-    background-color: wheat;
-}
-
-.filtros{
-    width: 25%;
-}
-
-.listaFiltro{
-    font-size: 0.7rem;
-}
-
-.btnFiltro, .inputFiltro{
-    padding: 0.3rem;
-    width: 4rem;
-    font-size: 0.6rem;
-    text-align: center;
-}
-
-input[type=checkbox]{
-    accent-color: orange;
-}
-
-.card{
+  .catalogo {
     display: grid;
-    grid-template-rows: 0.3fr 1fr;
-}
-
-.cardBody{
-    display: grid;
-    grid-template-rows: 1fr 0.5fr 1fr 1fr;
-    align-items: center;
-}
-
-.carrito{
-    padding: 0;
-    margin: 0;
-}
-
-.detalleCarrito{
-    display: grid;
-    grid-template-columns: 0.3fr 2fr 0.5fr 0.3fr;
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    border: 0.5px solid black;
-    margin: 0.5rem;
-    padding: 1rem;
-    border-radius: 10px;
-}
-
-.carroVacio{
-    padding: 1rem;
-}
-
-.trashCart{
-    background-color: transparent;
-    border: none;
-}
-
-.total{
-    padding: 1rem;
-    margin: 1rem 0;
-    background-color: rgb(217, 174, 121);
-    font-size: 1.2rem;
-    text-align: right;
-}
-
-.catalogo{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin: 2rem 1rem;
+  }
 }
 
-.productos{
-    width: 70%;
-}
-
-.precio{
-    font-weight: bold;
-}
-
-.inputSpinner{
-    background-color: orange;
-    width: 1.5rem;
-    height: 1.5rem;
+@media screen and (min-width: 768px) {
+  .btnFiltro,
+  .inputFiltro {
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 0.9rem;
     text-align: center;
-    color: white;
-    border-radius: 1.5rem;
-    border: none;
+  }
+
+  .listaFiltro {
+    font-size: 1rem;
+  }
+
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 2rem 1rem;
+  }
 }
 
-.agregar{
-    height: 2rem;
+@media screen and (min-width: 960px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .agregar {
+    padding: 0.2rem 0.5rem;
     border-radius: 10px;
     background-color: #f8f5ef;
     border: none;
     box-shadow: 1px 1px 5px rgb(71, 71, 71);
-    font-size: 0.8rem;
-}
-
-.vaciar{
-    margin: 1rem;
-    padding: 0.5rem;
-    border-radius: 10px;
-    background-color: rgb(248, 245, 239);
-    font-weight: bold;
-    border: none;
-    box-shadow: 1px 1px 5px rgb(71, 71, 71);
-    width: 20%;
-}
-
-footer{
-    background-color: rgb(255, 224, 162);
-    display: flex;
-    justify-content: space-between;
-}
-
-footer p{
-    text-align: center;
-    vertical-align: middle;
-    margin: 0.5rem;
-}
-
-@media screen and (min-width: 576px) {
-    .home{
-        display: block;
-    }
-
-    h2{
-        font-size: 1.5rem;
-    }
-
-    h4{
-        font-size: 1rem;
-    }
-
-    .catalogo{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin: 2rem 1rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .btnFiltro, .inputFiltro{
-        padding: 0.5rem;
-        width: 6rem;
-        font-size: 0.9rem;
-        text-align: center;
-    }
-
-    .listaFiltro{
-        font-size: 1rem;
-    }
-
-    .catalogo{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        margin: 2rem 1rem;
-    }
-}
-
-@media screen and (min-width: 960px) {
-    .catalogo{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 1rem;
-        margin: 2rem 1rem;
-    }
-
-    .agregar{
-        padding: 0.2rem 0.5rem;
-        border-radius: 10px;
-        background-color: #f8f5ef;
-        border: none;
-        box-shadow: 1px 1px 5px rgb(71, 71, 71);
-    }
+  }
 }
